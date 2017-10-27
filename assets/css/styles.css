@@ -61,6 +61,7 @@
 
 
 
+
 /* styles
   --------------------------------------------- */
 
@@ -83,6 +84,7 @@ body {
 .parallax {
     font-size: 200%;
 }
+
 
 
 
@@ -115,6 +117,7 @@ body {
 hr {
     margin: 10px;
 }
+
 
 
 
@@ -165,6 +168,7 @@ hr {
     display: inline-block;
     padding: 0px 200px 200px 200px;
 }
+
 
 
 
@@ -241,6 +245,7 @@ i {
 }
 
 
+
 /*a:visited {
     color: white;
 }*/
@@ -262,8 +267,7 @@ a {
     color: #3f3f3f;
 }
 
-.projects
-{
+.projects {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -282,7 +286,51 @@ a {
 }
 
 .screenshot {
-    height: 250px;
+
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.appTitle {
+    position: relative;
+    width: 50%;
+        height: 250px;
     width: 450px;
     margin: 30px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.appTitle:hover .screenshot {
+    opacity: 0.3;
+}
+
+.appTitle:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #fff;
+    color: #666;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+button {
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
 }
