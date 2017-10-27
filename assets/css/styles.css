@@ -60,6 +60,7 @@
 
 
 
+
 /* styles
   --------------------------------------------- */
 
@@ -70,7 +71,7 @@ html {
 
 body {
     font: 100% / 1.25 Allerta;
-    background-image: url(../images/lighthouse.jpg);
+    background-image: url(../images/ceiling.jpg);
     color: white;
 }
 
@@ -82,6 +83,7 @@ body {
 .parallax {
     font-size: 200%;
 }
+
 
 
 
@@ -120,6 +122,7 @@ hr {
 
 
 
+
 /* style the groups
   --------------------------------------------- */
 
@@ -133,12 +136,12 @@ hr {
     z-index: 3;
     /* slide under groups 1 and 3 */
     text-align: center;
-
 }
 
 #group2 .parallax__layer--base {
     background-image: url(../images/arab_tile.png);
-       text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 #group4 .parallax__layer--base {
@@ -160,7 +163,9 @@ hr {
     background: #fff;
     text-align: center;
     display: inline-block;
+    padding: 0px 200px 200px 200px;
 }
+
 
 
 
@@ -235,6 +240,7 @@ i {
     }
 }
 
+
 /*a:visited {
     color: white;
 }*/
@@ -245,40 +251,25 @@ a:hover {
 
 a {
     text-decoration: none;
-    color: #0b3b7a;
+    color: #666;
 }
 
 .sectionTitle {
     margin-top: 50px;
-    width: 25%;
     display: inline-block;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     font-weight: 900;
-    color: #0b3b7a;
+    color: #3f3f3f;
 }
 
-.projects,
-.technologies {
-    width: 50%;
-/*    display: inline-block;
-*/    padding-bottom: 20px;
+.projects
+{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.appData {
-    display: inline-block;
-    width: 40%;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    color: black;
-}
-
-.techIcons {
-    max-width: 175px;
-    max-height: 175px;
-    margin: 20px;
-}
 
 .aboutText {
     top: 75%;
@@ -290,3 +281,8 @@ a {
     text-align: center;
 }
 
+.screenshot {
+    height: 250px;
+    width: 450px;
+    margin: 30px;
+}
