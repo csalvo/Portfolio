@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     // touch event check stolen from Modernizr
     var touchSupported = (('ontouchstart' in window) ||
-                            window.DocumentTouch && document instanceof DocumentTouch);
+        window.DocumentTouch && document instanceof DocumentTouch);
 
     // if touch events are supported, tie our animation to the position to these events as well
     if (touchSupported) {
@@ -39,7 +39,7 @@ $(document).ready(function() {
 
     // get parallax elements straight away as they wont change
     // this will minimise DOM interactions on scroll events
-    $('.parallax').each(function(){
+    $('.parallax').each(function() {
 
         $elm = $(this);
         var id = $elm.data('id');
@@ -57,4 +57,41 @@ $(document).ready(function() {
         };
 
     });
+
+    $("#friends_btn").click(function() {
+        techDetailsModal(this.id);
+    });
+    $("#fonts_btn").click(function() {
+        techDetailsModal(this.id);
+    });
+    $("#lab_btn").click(function() {
+        techDetailsModal(this.id);
+    });
+
+    var techDetailsModal = function(buttonID) {
+        switch (buttonID) {
+            case "lab_btn":
+                $('.modal').html('<div class="modal-content"><span class="close">&times;</span><p>JS HTML etc</p></div>');
+                break;
+            case "friends_btn":
+                $('.modal').html('<div class="modal-content"><span class="close">&times;</span><p>JS HTML NODE etc</p></div>');
+                break;
+            case "fonts_btn":
+                $('.modal').html('<div class="modal-content"><span class="close">&times;</span><p>JS HTML API etc</p></div>');
+                break;
+        }
+        $('.modal').css("display", "block");
+    }
+
+    $("#friends_btn").click(function() {
+        techDetailsModal(this.id);
+    });
+
+
+    // When the user clicks on <span> (x), close the modal
+    $("body").on("click", ".close", function() {
+        $('.modal').css("display", "none");
+    });
+
+
 });
