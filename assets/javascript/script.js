@@ -71,13 +71,16 @@ $(document).ready(function() {
     var techDetailsModal = function(buttonID) {
         switch (buttonID) {
             case "lab_btn":
-                $('.modal').html('<div class="modal-content"><span class="close">&times;</span><p>JS HTML etc</p></div>');
+                $('.modalHeader').text("Lab Locator Tech Details");
+                $('.listOfTech').html('<li>Javascript</li><li>HTML</li><li>CSS</li><li>DefiantJS</li><li>FlowtypeJS</li><li>Google Maps Javascript API</li>')
                 break;
             case "friends_btn":
-                $('.modal').html('<div class="modal-content"><span class="close">&times;</span><p>JS HTML NODE etc</p></div>');
+                $('.modalHeader').text("Friend Finder Tech Details");
+                $('.listOfTech').html('<li>Javascript</li><li>HTML</li><li>Materialize CSS</li><li>Node / Express</li><li>Heroku</li>');
                 break;
             case "fonts_btn":
-                $('.modal').html('<div class="modal-content"><span class="close">&times;</span><p>JS HTML API etc</p></div>');
+                $('.modalHeader').text("Fontizer Tech Details");
+                $('.listOfTech').html('<li>Javascript</li><li>HTML</li><li>Bootstrap CSS</li><li>Google Fonts API</li>');
                 break;
         }
         $('.modal').css("display", "block");

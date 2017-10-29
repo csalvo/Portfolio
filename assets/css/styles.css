@@ -350,6 +350,7 @@ button:hover {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color:black;
 }
 
 /* Modal Content/Box */
@@ -358,14 +359,14 @@ button:hover {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 25%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -376,6 +377,23 @@ button:hover {
     cursor: pointer;
 }
 
-.modal p {
-    color:black;
+p, .listOfTech {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+h2 {
+    font-size: 24px;
+}
+
+.listOfTech {
+    margin-left:20px;
+}
+.modal-header {
+    border-bottom: 1px solid #888;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.modal-body {
+    padding: 20px;
 }
