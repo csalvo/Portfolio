@@ -67,6 +67,9 @@ $(document).ready(function() {
     $("#lab_btn").click(function() {
         techDetailsModal(this.id);
     });
+    $("#pullenrd_btn").click(function() {
+        techDetailsModal(this.id);
+    });
 
     var techDetailsModal = function(buttonID) {
         switch (buttonID) {
@@ -81,6 +84,10 @@ $(document).ready(function() {
             case "fonts_btn":
                 $('.modalHeader').text("Fontizer Tech Details");
                 $('.listOfTech').html('<li>Javascript</li><li>HTML</li><li>Bootstrap CSS</li><li>Google Fonts API</li>');
+                break;
+            case "pullenrd_btn":
+                $('.modalHeader').text("Pullen Road Tech Details");
+                $('.listOfTech').html('<li>Materialize CSS</li><li>HTML</li><li>Netlify</li><br><p>This website was made for a condo rental company with an outdated website. Their previous page load times were 3-4 seconds. Built on the <a href="https://jamstack.org/">JAMStack</a>, which relies on CDNs and APIs for all functionality instead of hosting scripts/databases on a personal server, the page load time has significantly decreased, even with added functionality and more advanced styling.</p><br><p><a href="http://http://pullenroadsuites.netlify.com/">Live site</a>');
                 break;
         }
         $('.modal').css("display", "block");
