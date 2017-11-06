@@ -87,7 +87,7 @@ $(document).ready(function() {
                 break;
             case "pullenrd_btn":
                 $('.modalHeader').text("Pullen Road Tech Details");
-                $('.listOfTech').html('<li>Materialize CSS</li><li>HTML</li><li>Netlify</li><br><p>This website was made for a condo rental company with an outdated website. Their previous page load times were 3-4 seconds. Built on the <a href="https://jamstack.org/">JAMStack</a>, which relies on CDNs and APIs for all functionality instead of hosting scripts/databases on a personal server, the page load time has significantly decreased, even with added functionality and more advanced styling.</p><br><p><a href="http://http://pullenroadsuites.netlify.com/">Live site</a>');
+                $('.listOfTech').html('<li>Materialize CSS</li><li>HTML</li><li>Netlify</li><br><p>This website was made for a condo rental company with an outdated website. Their previous page load times were 3-4 seconds. Built on the <a href="https://jamstack.org/">JAMStack</a>, which relies on CDNs and APIs for all functionality instead of hosting scripts/databases on a personal server, the page load time has significantly decreased, even with added functionality and more advanced styling.</p><br><p><a href="http://pullenroadsuites.netlify.com/">Live site</a>');
                 break;
         }
         $('.modal').css("display", "block");
