@@ -61,7 +61,7 @@ $(document).ready(function() {
     $("#friends_btn").click(function() {
         techDetailsModal(this.id);
     });
-    $("#fonts_btn").click(function() {
+    $("#nyt_btn").click(function() {
         techDetailsModal(this.id);
     });
     $("#lab_btn").click(function() {
@@ -81,9 +81,9 @@ $(document).ready(function() {
                 $('.modalHeader').text("Friend Finder Tech Details");
                 $('.listOfTech').html('<li>Javascript</li><li>HTML</li><li>Materialize CSS</li><li>Node / Express</li><li>Heroku</li>');
                 break;
-            case "fonts_btn":
-                $('.modalHeader').text("Fontizer Tech Details");
-                $('.listOfTech').html('<li>Javascript</li><li>HTML</li><li>Bootstrap CSS</li><li>Google Fonts API</li>');
+            case "nyt_btn":
+                $('.modalHeader').text("NYT Search Tech Details");
+                $('.listOfTech').html('<li>React.JS / React Router</li><li>MongoDB / Mongoose</li><li>Node / Express</li><li>Bootstrap CSS</li><li>New York Times API</li><li>Heroku</li><br><p><a href="https://search-n-save-nyt.herokuapp.com">Live site</a>');
                 break;
             case "pullenrd_btn":
                 $('.modalHeader').text("Pullen Road Tech Details");
