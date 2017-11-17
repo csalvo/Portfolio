@@ -142,16 +142,13 @@ hr {
 }
 
 #group2 .parallax__layer--base {
-/*    background-image: url(../images/arab_tile.png);
-*/  
-    background-color: #ddd; 
+    background-image: url(../images/dust_scratches.png); 
     justify-content: center;
     display: flex;
 }
 
 #group4 .parallax__layer--base {
-/*    background-image: url(../images/arab_tile.png);
-*/   
+    background-image: url(../images/dust_scratches.png);
     text-align: center;
 }
 
@@ -166,7 +163,7 @@ hr {
 }
 
 #group3 .parallax__layer--base {
-    background: #eee;
+    background: #ccc;
     text-align: center;
     display: inline-block;
     padding: 0px 200px 200px 200px;
