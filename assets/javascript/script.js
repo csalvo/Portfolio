@@ -75,19 +75,20 @@ $(document).ready(function() {
         switch (buttonID) {
             case "lab_btn":
                 $('.modalHeader').text("Lab Locator Tech Details");
-                $('.listOfTech').html('<li>Javascript</li><li>HTML</li><li>CSS</li><li>DefiantJS</li><li>FlowtypeJS</li><li>Google Maps Javascript API</li>')
+                $('.listOfTech').html('<li>Javascript</li><li>HTML</li><li>CSS</li><li>DefiantJS</li><li>FlowtypeJS</li><li>Google Maps Javascript API</li><br><p><a href="https://csalvo.github.io/Lab-Locator/" target="_blank">Live site</a>');
                 break;
             case "friends_btn":
                 $('.modalHeader').text("Friend Finder Tech Details");
-                $('.listOfTech').html('<li>Javascript</li><li>HTML</li><li>Materialize CSS</li><li>Node / Express</li><li>Heroku</li>');
+                $('.listOfTech').html('<li>Javascript</li><li>HTML</li><li>Materialize CSS</li><li>Node / Express</li><li>Heroku</li><br><p><a href="https://bearybestfriendfinder.herokuapp.com/" target="_blank">Live site</a>');
+                break;
                 break;
             case "nyt_btn":
                 $('.modalHeader').text("NYT Search Tech Details");
-                $('.listOfTech').html('<li>React.JS / React Router</li><li>MongoDB / Mongoose</li><li>Node / Express</li><li>Bootstrap CSS</li><li>New York Times API</li><li>Heroku</li><br><p><a href="https://search-n-save-nyt.herokuapp.com">Live site</a>');
+                $('.listOfTech').html('<li>React.JS / React Router</li><li>MongoDB / Mongoose</li><li>Node / Express</li><li>Bootstrap CSS</li><li>New York Times API</li><li>Heroku</li><br><p><a href="https://search-n-save-nyt.herokuapp.com" target="_blank">Live site</a>');
                 break;
             case "pullenrd_btn":
                 $('.modalHeader').text("Pullen Road Tech Details");
-                $('.listOfTech').html('<li>Materialize CSS</li><li>HTML</li><li>Netlify</li><br><p>This website was made for a condo rental company to replace their outdated one. Their previous page load times were 3-4 seconds. Built on the <a href="https://jamstack.org/">JAMStack</a>, which relies on CDNs and APIs for all functionality instead of hosting scripts/databases on a personal server, the page load time has significantly decreased, even with added functionality and more advanced styling.</p><br><p><a href="http://pullenroadsuites.netlify.com/">Live site</a>');
+                $('.listOfTech').html('<li>Materialize CSS</li><li>HTML</li><li>Netlify</li><br><p>This website was made for a condo rental company to replace their outdated one. Their previous page load times were 3-4 seconds. Built on the <a href="https://jamstack.org/">JAMStack</a>, which relies on CDNs and APIs for all functionality instead of hosting scripts/databases on a personal server, the page load time has significantly decreased, even with added functionality and more advanced styling.</p><br><p><a href="http://pullenroadsuites.netlify.com/" target="_blank">Live site</a>');
                 break;
         }
         $('.modal').css("display", "block");
