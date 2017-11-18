@@ -62,6 +62,7 @@
 
 
 
+
 /* styles
   --------------------------------------------- */
 
@@ -84,6 +85,7 @@ body {
 .parallax {
     font-size: 200%;
 }
+
 
 
 
@@ -126,6 +128,7 @@ hr {
 
 
 
+
 /* style the groups
   --------------------------------------------- */
 
@@ -142,7 +145,7 @@ hr {
 }
 
 #group2 .parallax__layer--base {
-    background-image: url(../images/dust_scratches.png); 
+    background-image: url(../images/dust_scratches.png);
     justify-content: center;
     display: flex;
 }
@@ -168,6 +171,7 @@ hr {
     display: inline-block;
     padding: 0px 200px 200px 200px;
 }
+
 
 
 
@@ -248,6 +252,7 @@ i {
 
 
 
+
 /*a:visited {
     color: white;
 }*/
@@ -273,6 +278,7 @@ a {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
 }
 
@@ -301,7 +307,7 @@ a {
 .appTitle {
     position: relative;
     width: 50%;
-        height: 250px;
+    height: 250px;
     width: 450px;
     margin: 30px;
 }
@@ -340,30 +346,44 @@ button:hover {
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 5; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 5;
+    /* Sit on top */
     left: 0;
     top: 100%;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    color:black;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    color: black;
 }
 
+
 /* Modal Content/Box */
+
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     border-radius: 5px;
-    width: 25%; /* Could be more or less, depending on screen size */
+    width: 25%;
+    /* Could be more or less, depending on screen size */
 }
 
+
 /* The Close Button */
+
 .close {
     color: #aaa;
     float: right;
@@ -378,17 +398,20 @@ button:hover {
     cursor: pointer;
 }
 
-p, .listOfTech {
+p,
+.listOfTech {
     font-size: 16px;
     margin-bottom: 8px;
 }
+
 h2 {
     font-size: 24px;
 }
 
 .listOfTech {
-    margin-left:20px;
+    margin-left: 20px;
 }
+
 .modal-header {
     border-bottom: 1px solid #888;
     margin-bottom: 15px;
@@ -398,3 +421,80 @@ h2 {
 .modal-body {
     padding: 20px;
 }
+
+@media only screen and (max-width: 1420px) {
+    .appTitle {
+        height: 150px;
+        width: 350px;
+        margin-top: 50px;
+    }
+    .icons {
+        top: 45%;
+        font-size: 2.5em;
+    }
+    .text {
+        width: 120%;
+    }
+    .middle {
+        left: 35%;
+    }
+    button {
+        margin-left: 110px;
+    }
+}
+
+
+@media only screen and (max-width: 1220px) {
+    .appTitle {
+        height: 100px;
+        width: 300px;
+        margin-top: 100px;
+    }
+    .icons {
+        top: 45%;
+        font-size: 2em;
+    }
+    .text {
+        width: 120%;
+    }
+    .middle {
+        top: 80%;
+        left: 32%;
+    }
+    button {
+        margin-left: 110px;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .appTitle {
+        height: 100px;
+        width: 300px;
+        margin-top: 40px;
+    }
+    .text {
+        width: 120%;
+    }
+    .middle {
+        top: 80%;
+        left: 32%;
+    }
+    button {
+        margin-left: 110px;
+    }
+    .sectionTitle {
+        padding-bottom: 0;
+        font-size: 1em;
+    }
+    .icons {
+        top: 45%;
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .appTitle {
+        height: 100px;
+        width: 300px;
+        margin-top: 40px;
+    }
